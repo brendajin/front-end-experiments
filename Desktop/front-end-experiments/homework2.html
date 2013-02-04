@@ -1,0 +1,58 @@
+<head/>
+<body>
+	<h1></h1>
+<script>
+var correctLetters = ['p','a','i','n','t','e','d',' ','p','o','n','i','e','s'];
+var guessedLetters = new Array();
+
+var guess = window.prompt("Can you guess this word? Type a letter. Hint: Joni Mitchell.");
+guessLetter(guess);
+
+
+function guessLetter(tryLetter){
+	//check for correct letters
+	var resultString;
+	var letterFound;
+	var letterStatus = correctLetters.indexOf(tryLetter);
+	var arrayMatch;
+	var arrayMatchTest = 0;
+
+	for (i = 0; i < guessedLetters.length;i++){
+		if (correctLetters[i]==guessedLetters[i]) {
+			arrayMatchTest=arrayMatchTest+1;
+		}
+	}
+	
+	//this needs to be fixed
+	if(letterStatus != -1 && arrayMatchTest == correctLetters.length-1) {
+		window.alert("Congrats! You guessed the word!");
+	}
+
+	else if(letterStatus == -1){
+		var resultString = "Oh no! The word doesn't contain that letter. Try again?";
+	}	
+	
+	else if (letterStatus !=-1){
+		var resultString = "Nice work! You found a letter! Try another!";
+
+		for (i = 0; i < correctLetters.length; i++){
+			if(correctLetters[i] == tryLetter){
+				guessedLetters[i] = correctLetters[i];
+				console.log("letter found at position "+ i);
+				letterFound = true;
+			}
+		}
+	}
+
+		document.body.innerHTML = guessedLetters;
+
+		//prompt user again
+		guess = window.prompt(resultString);
+		guessLetter(guess);	
+		
+	}
+
+
+
+</script>
+</body>
