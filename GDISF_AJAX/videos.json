@@ -1,0 +1,27 @@
+[
+  {"youtubeId": "KqjKOalcI10",
+    "title": "My Funny Valentine",
+    "author": "narthify",
+    "favorite": true
+  },
+  {"youtubeId": "TddFnTB_7IM",
+    "title": "Trip through the 80s",
+    "author": "meliberty",
+    "favorite": false
+  },
+  {"youtubeId": "vX07j9SDFcc",
+    "title": "Circle of Life",
+    "author": "parkerjademerce",
+    "favorite": true
+    },
+  {"youtubeId": "il2IrgFHfsg",
+    "title": "The Ooooh Cat",
+    "author": "RnBTree",
+    "favorite": false
+  },
+  {"youtubeId": "epUk3T2Kfno",
+    "title": "Otters Holding Hands",
+    "author": "cynthiaholmes",
+    "favorite": true
+  }
+]
